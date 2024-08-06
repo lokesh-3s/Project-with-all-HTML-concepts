@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>My First Web Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Lokesh Sahuji">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+        <link rel="icon" href="kachnerji.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+    <header>
+        <h1>Hello World</h1>
+        <!--have only 1 h1 in one page as the topic of page though multiple are allowed-->
+        <hr>
+        <!--alternative is arialabel=.... for nav without heading
+        avoid whitespace in id names of all elements-->
+        <nav aria-labelledby="primary-navigation">
+            <h2 id="primary-navigation">PM</h2>
+            <ul>
+                <li><a href="#HTML">Learning HTML</a></li>
+                <li><a href="#Vacay">Planning Vacation</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>   
+        <hr>
+    </header>
+    <main>
+        <!--Semantic tags = Gives more meaning to code of a page by multiple ways like knowing separations eg=hr,nav,section,lists,header(multiple possible),main(only 1),footer(multiple possible),article,section,aside,details,summary,caption,thead,tbody,tfoot,scope(alternative=id refer video to know that)-->     
+        <article id="HTML">
+            <h2>Ready to learn HTML</h2>
+            <section>
+                <h3>HTML5</h3>
+                <p>This    is my first web page. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nesciunt ab nostrum, sunt dolorum natus corporis facilis minima, expedita dolor, deserunt nihil vel quas recusandae doloribus reiciendis exercitationem in officia!                                   
+        
+
+                <br>f
+                </p>
+                kgf            f 
+                gf               <br>
+                <!--title,width,height is not compulsory , width and height is still advised to mmention for letting browser know size and avoiding shifting of things on different pop ups.
+                Many versions have / before > for img showing it as self closing tag-->
+                <img src="img/html_logo_300x300.png" alt="HTML 5 LOGO"  title="VERSION=HTML5" wiDth="200" Height="300">
+                <figure>
+                    <figcaption>HTML5 Code</figcaption>
+                    <p>
+                    <code>&lt;h1&gt;HELLO WORLD&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <details>
+                    <summary>Guess the <mark>no. of hours</mark> I code daily.</summary>
+                    <p>Approximately <time datetime="PT1H">1 hour</time> a day as a beginner at late night <time datetime="01:00">1 am</time>.</p>
+                </details>
+                <h3>My daily schedule</h3>
+                <p>Lemme tell u how I ..... </p>
+                <br>&nbsp;&nbsp;&nbsp;.....I learn more about web dev.
+                <br>&nbsp;&nbsp;&nbsp;.....I plan out my schedule.
+                <br>&nbsp;&nbsp;&nbsp;.....I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/">MDN</a></abbr>.
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>no. of hours</mark> I code daily.</summary>
+                        <p>Approximately <time datetime="PT1H">1 hour</time> a day as a beginner at late night <time datetime="01:00">1 am</time>.</p>
+                    </details>
+                </aside>
+                <!--details tag help to give that drop down option and summary gives question label and p gives ans-->
+                <p>points:(one line leave due to list enclosed in &lt;p&gt; tag but spaces before pts is a feature of list)</p>
+                <ol>
+                    <li>Point A</li>
+                    <li>Point B</li>
+                    <li>Point C</li>
+                    <li>Point D</li>
+                    
+                </ol>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">Morning</th>
+                        <td>
+                            <time datetime="09:00">9am</time>
+                        </td>
+                        <td>Wake up</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="09:00">9am</time>-<time datetime="11:00">11am</time>
+                        </td>
+                        <td>Get Ready</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Afternoon</th>
+                        <td>
+                            <time datetime="11:00">11am</time>-<time datetime="17:00">5pm</time>
+                        </td>
+                        <td>Work</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">HALF DAY</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Evening</th>
+                        <td rowspan="2">All other time</td>
+                        <td>enjoy</td>
+                    </tr>
+                    <tr>
+                        <td>relax</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Lets follow it<br>.................daily</td>
+                        </tr>
+                    </tfoot>
+                    <!--th has the feature to bold and centre align headings and table has the feature to stretch its boundaries as required by written material and doesnt occupy whole page horizontally like para and lists. this can be checked in inspect and elements of web page-->
+                </table>
+            </section>
+        </article>
+        
+        <hr>
+        abc
+        <article ID="Vacay">
+            <h2>I m also planning a vacation.</h2>
+            <p>Working hard rn and <em>need a getaway</em>.</p>
+            <p>I live in Abad and <strong>&lt;need some nature surrounding vacay</strong> .</p>
+            <figure>
+                <img src="img/caribbean(1).jpg" alt="NATURE&lt;&lt;3" title="NATURE&lt;&lt;3" loading="lazy" width="400" height="225" >
+                <figcaption>
+                    Nature&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;3=
+                    Sukooon
+                </figcaption>
+            </figure>
+            <!--figure gives space before image showing like a frame or else it is aligned acc to content before it.
+            also figcaption should be either the first or last elemnt of figure
+            -->
+            <!--if loading is not set it is default to eagar-->
+            <section>
+            <h3>My daily schedule</h3>
+            <ul>
+                <li><p>Lemme tell u how I </p>
+                <p>I've heard of:</p></li>
+                <li><address>
+                PLot no abc<br>
+                Whatsoever town<br>
+                The best city
+                </address></li>
+            </ul>
+            </section> 
+            <section> 
+            <!-- COMMENT HTML CTRL+u -->
+            <h3>Avoid:</h3>
+            <p>Cold Areas like:</p>
+            <dl>
+                <dt>North pole</dt>
+                <dd>Too <strong>cold</strong>!</dd>
+
+                <dt>South pole</dt>
+                <dd>Cold place again.</dd>
+            </dl>
+            </section>
+        </article>
+        <hr>
+        <article id="contact">
+            <h2>Contact Me!!</h2>
+            <p>Would like to hear u</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Dave" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Gray" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="!!!!!" required>
+                </p>
+                <p>
+                    <label for="phoneno">Phone No:</label>
+                    <input type="tel" name="phoneno" id="phoneno" placeholder="9999999999" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="Decade">Favourite Decade:</label>
+                    <input type="number" name="Decade" id="Decade" min="1950" max="2030" step="10" value="1980">
+                    <!--giving type="number" only without min,max,step and value gives blank field to increase or decrease by 1 from -infinity to +infinity-->
+                </p>
+                <p>
+                    <label for="Coffee">Favourite Coffee:</label>
+                    <select name="Coffee" id="Coffee" multiple size="8">
+                        <optgroup label="Coffees">
+                            <option value="Normal Coffee">Regular Coffee</option>
+                            <option value="Cold" selected>Cold Coffee</option>
+                            <option value="Frappe Coffee">Frappe Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso">
+                            <option value="Cappuccino">Cappuccino</option>
+                            <option value="Americano">Americano</option>
+                        </optgroup>
+                        <option value="others">Other</option>
+                    </select>
+                </p>
+                <!-- <p>
+                    <label for="Coffee">Favourite Coffee:</label>
+                    <input type="text" name="Coffee" id="Coffee" list="Coffee-list">
+                    <datalist id="Coffee-list">
+                        <option value="Normal Coffee">
+                        <option value="Cold Coffee">
+                        <option value="Cappuccino">
+                        <option value="Frappuccino">
+                        <option value="Others">
+                    </datalist>
+                </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your Favourite Food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="Pizza" value="Pizza">
+                        <label for="Pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="Pasta" value="Pasta">
+                        <label for="Pasta">Pasta</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="Others" value="Others">
+                        <label for="Others">Others</label>
+                    </p>
+                    <!--The name in radio buttons should be same for single choice as answer .Also remember do not repeat input given to id in entire code.-->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your Favourite Pet?</legend>
+                    <p>
+                        <input type="checkbox" name="Pet" id="Dog" value="Dog">
+                        <label for="Dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Pet" id="Cat" value="Cat">
+                        <label for="Cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Pet" id="Othersss" value="Othersss">
+                        <label for="Othersss">Other</label>
+                    </p>
+                    <!--here name is same for all inputs to denote they are linked for same question-->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Anything u want to message me!!</legend>
+                    <label for="msg">Message:</label>
+                    <br>
+                    <textarea name="msg" id="msg" cols="100" rows="10" placeholder="Type here..."></textarea>
+                </fieldset>
+                <Button type="Submit">Submit</Button>
+                <Button type="Reset">Reset</Button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <!--The page that appears on clicking Submit is by the bin webpage and has "values" of the things we have selected -->
+                <!--On use of post the values are in form block while by submit they are in args block as the action is get.also the url of the output page that is also printed as last line of output screen in header section has all values in url link for get action and doesnt have it for post action thus post is safer and is used to transfer data to some other page-->
+            </form>
+        </article>
+        <hr>
+    </main>
+    <footer>
+        <p>
+            &lt;&lt;&lt;&copy;<a href="about.html">Lokesh Sahuji</a>&gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+    </body>
+</html>
